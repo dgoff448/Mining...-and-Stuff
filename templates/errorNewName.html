@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    </head>
+    <body style="background-color: gray;">
+        <center>
+        <div align="center" style=" border-radius: 15px; padding: 15px; width: 500px;">
+        <label class="main_label">WARNING: A game file with that name already exists. If you continue, it will rewrite that game file. Are you sure you want to continue?</label>
+        <form action="">
+            <input type="text" name="playerName" value="{0}" hidden/>
+            <input class="main_text_input" type="text" name="playerName" val="{0}" hidden>
+            <br>
+            <br>
+            <div style="padding: 15px;">
+                <button  class="main_button" val="Yes" formaction="/rewrite">Yes</input>
+            </div>
+            <div style="padding: 15px;">
+                <button  class="main_button" val="No" formaction="/">No</input>
+            </div>
+        </form>
+        </div>
+        </center>
+    </body>
+</html>

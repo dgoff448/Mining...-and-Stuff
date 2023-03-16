@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>selling.html</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/game.css') }}">
+    </head>
+    <body style="background-color: gray;">
+        <div>
+            <form>
+                <button class="game_button" val="Home" type="submit" formaction="/home">Home</button>
+                <button class="game_button" value="Mine" type="submit" formaction="/miningMode">Mine</button>
+                <button class="game_button" value="Sell" type="submit" formaction="/sellingMode">Sell</button>
+                <button class="game_button" value="Buy" type="submit" formaction="/buyingMode" disabled>Buy</button>
+                <button class="game_button" value="Refine" type="submit" formaction="/refinery">Refine</button>
+                <button class="game_button" value="Craft" type="submit" formaction="/crafting">Craft</button>
+                <button class="game_button" value="Orders" type="submit" formaction="/orders">Orders</button>
+                <button class="game_button" value="Settings" type="submit" formaction="/settings">Settings</button>
+                <button class="game_button" value="Save" type="submit" formaction="/save">Save</button>
+                <button class="game_button" value="Quit" type="submit" formaction="/quit">Quit</button>
+                <input type="text" name="playerName" value="{1}" hidden/>
+            </form>
+        </div>
+        <div align="center" class="div_colors" style=" position: fixed; top: 65; left: 300; width: 300px;">
+            <form>
+                <input type="text" name="playerName" value="{1}" hidden/>
+                <div align="center">
+                    <label class="game_label_title">Buy Items</label>
+                </div>
+                <hr>
+                {3}
+                <input class="game_input_submit" type="submit" name="submitBuy" formaction="/buyingMode2" value="Buy"/>
+            </form>
+        </div>
+        <div align="center" class="div_colors" style=" position: fixed; top: 65; left: 700; width: 300px;">
+            <label class="game_label_title">Item Costs</label>
+            <hr>
+            <div style="display: table;">
+                <div align="left" style="display: table-cell; float: left;">
+                    {4}
+                </div>
+                <div style="display: table-cell; width: 30px;"></div>
+                <div align="right" style="display: table-cell; float: right;">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="inventory_div">
+            <div align="center">
+                <label class="game_label_title">Inventory</label>
+            </div>
+            <hr>
+            {0}
+        </div>
+        <div class="div_colors" style="position: relative; top: 50; width: 200px;">
+            <label class="game_label_title">Items Bought</label>
+            <hr>
+            {2}
+        </div>
+    </body>
+</html>

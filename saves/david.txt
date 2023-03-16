@@ -1,0 +1,5 @@
+Money:4746&Pickaxe:37&Stick of Dynamite:0&Box of Dynamite:0&Wood:0&Stone:36&Coal:11&Iron:7&Gold:8&Diamond:2&Refined Iron:0&Refined Gold:0&Iron Pickaxe:0&Shovel:0&Axe:0&Iron Bucket:0&Ammo:0&Spurs:0&Ring:0&Diamond Ring:0&Gold Necklace:0&Skillet:0
+63,64,65,66,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100
+83,7,83,19,19,7,39,85,70,84,8,33,8,77,88,83,83,61,48,96,32,98,54,39,10,44,2,75,36,74,26,91,14,73,23,12
+Marie Mathews:Ammo:needs Ammo:154&Jane Norman:Iron Pickaxe:needs an Iron Pickaxe:125&Karla Patrick:Iron Pickaxe:needs an Iron Pickaxe:111
+AutoSave:True

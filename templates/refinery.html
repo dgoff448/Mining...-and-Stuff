@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>refinery.html</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/game.css') }}">
+    </head>
+    <body style="background-color: gray;">
+        <div>
+            <form>
+                <button class="game_button" val="Home" type="submit" formaction="/home">Home</button>
+                <button class="game_button" value="Mine" type="submit" formaction="/miningMode">Mine</button>
+                <button class="game_button" value="Sell" type="submit" formaction="/sellingMode">Sell</button>
+                <button class="game_button" value="Buy" type="submit" formaction="/buyingMode">Buy</button>
+                <button class="game_button" value="Refine" type="submit" formaction="/refinery" disabled>Refine</button>
+                <button class="game_button" value="Craft" type="submit" formaction="/crafting">Craft</button>
+                <button class="game_button" value="Orders" type="submit" formaction="/orders">Orders</button>
+                <button class="game_button" value="Settings" type="submit" formaction="/settings">Settings</button>
+                <button class="game_button" value="Save" type="submit" formaction="/save">Save</button>
+                <button class="game_button" value="Quit" type="submit" formaction="/quit">Quit</button>
+                <input type="text" name="playerName" value="{1}" hidden/>
+            </form>
+        </div>
+        <div align="center" class="div_colors" style="position: fixed; top: 65; left: 300; width: 350px;">
+            <form>
+                <input type="text" name="playerName" value="{1}" hidden/>
+                <div align="center">
+                    <label class="game_label_title">Refine Materials</label>
+                </div>
+                <input type="text" name="playerName" value="{1}" hidden/>
+                <hr>
+                <input type="radio" value="" name="mat" checked="checked" hidden/>
+                <input type="radio" value="Iron" name="mat"/>
+                <img src='static/css/img/Refined Iron.png' alt='' width='32' height='32' style='padding: 20px 10px 0px 10px;'>
+                <label class="game_label">Refined Iron (Cost: 1 Iron + 2 Coal)</label>
+                <br>
+                <input type="radio" value="Gold" name="mat"/>
+                <img src='static/css/img/Refined Gold.png' alt='' width='32' height='32' style='padding: 20px 10px 0px 10px;'>
+                <label class="game_label">Refined Gold (Cost: 1 Gold + 4 Coal)</label>
+                </hr>
+                <br>
+                <br>
+                <label class="game_label_title">Qty: </label>
+                <input class="game_number_input" type="number" value="0" name="qty" style="width: 50px;" align="right">
+                <br>
+                <br>
+                <br>
+                <input class="game_input_submit" type="submit" name="submitRefine" formaction="/refinery2" value="Refine"/>
+            </form>
+        </div>
+        <div class="inventory_div">
+            <div align="center">
+                <label class="game_label_title">Inventory</label>
+            </div>
+            <hr>
+            {0}
+        </div>
+        <div class="div_colors" style="position: relative; top: 65; width: 200px;">
+            <label class="game_label_title">Items Refined</label>
+            <hr>
+            {2}
+        </div>
+    </body>
+</html>

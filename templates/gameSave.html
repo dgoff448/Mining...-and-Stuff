@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>game.html</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/game.css') }}">
+    </head>
+    <body style="background-color: gray;">
+        <div>
+            <form>
+                <button class="game_button" value="Mine" formaction="/miningMode">Mine</button>
+                <button class="game_button" value="Sell" formaction="/sellingMode">Sell</button>
+                <button class="game_button" value="Buy" formaction="/buyingMode">Buy</button>
+                <button class="game_button" value="Refine" type="submit" formaction="/refinery">Refine</button>
+                <button class="game_button" value="Craft" type="submit" formaction="/crafting">Craft</button>
+                <button class="game_button" value="Orders" type="submit" formaction="/orders">Orders</button>
+                <button class="game_button" value="Settings" type="submit" formaction="/settings">Settings</button>
+                <button class="game_button" value="Save" formaction="/save">Save</button>
+                <button class="game_button" value="Quit" type="submit" formaction="/quit">Quit</button>
+                <input type="text" name="playerName" value="{1}" hidden/>
+            </form>
+        </div>
+        <div class="inventory_div">
+            <label class="game_label_title">Inventory</label>
+            <hr>
+            {0}
+        </div>
+        <br>
+        <div class="div_colors" style="width: 200px;">
+            <label class="game_label">Game Saved</label>
+        </div>
+    </body>
+</html>

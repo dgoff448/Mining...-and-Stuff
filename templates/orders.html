@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Orders</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/game.css') }}">
+    </head>
+    <body style="background-color: gray;">
+        <div>
+            <form>
+                <button class="game_button" val="Home" type="submit" formaction="/home">Home</button>
+                <button class="game_button" value="Mine" type="submit" formaction="/miningMode">Mine</button>
+                <button class="game_button" value="Sell" type="submit" formaction="/sellingMode">Sell</button>
+                <button class="game_button" value="Buy" type="submit" formaction="/buyingMode">Buy</button>
+                <button class="game_button" value="Refine" type="submit" formaction="/refinery">Refine</button>
+                <button class="game_button" value="Craft" type="submit" formaction="/crafting">Craft</button>
+                <button class="game_button" value="Orders" type="submit" formaction="/orders" disabled>Orders</button>
+                <button class="game_button" value="Settings" type="submit" formaction="/settings">Settings</button>
+                <button class="game_button" value="Save" type="submit" formaction="/save">Save</button>
+                <button class="game_button" value="Quit" type="submit" formaction="/quit">Quit</button>
+                <input type="text" name="playerName" value="{1}" hidden/>
+            </form>
+        </div>
+        <div class="inventory_div">
+            <div align="center">
+                <label class="game_label_title">Inventory</label>
+            </div>
+            <hr>
+            {0}
+        </div>
+        <div class="div_colors" style=" position: fixed; top: 65; left: 300; width: 500px;">
+            <form>
+                <div align="center">
+                    <label class="game_label_title">Orders</label>
+                    <input type="text" name="playerName" value="{1}" hidden/>
+                </div>
+                <hr>
+                {2}
+            </form>
+        </div>
+        <div class="div_colors" style="position: relative; top: 65; width: 200px;">
+            <label class="game_label_title">Money Earned</label>
+            <hr>
+            {3}
+        </div>
+    </body>
+</html>

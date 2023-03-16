@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/game.css') }}">
+    </head>
+    <body style="background-color: gray;">
+        <div>
+            <form>
+                <button class="game_button" value="Back" type="submit" formaction="/home">Back</button>
+                <input type="text" name="playerName" value="{0}" hidden/>
+            </form>
+        </div>
+        <div align="center" class="div_colors" style="position: fixed; top: 65; left: 15; width: 300px;">
+            <form>
+                <div align="center">
+                    <label class="game_label_title">Settings</label>
+                    <input type="text" name="playerName" value="{0}" hidden/>
+                </div>
+                <hr>
+                <label class="game_label">Auto Save</label>
+                <input type='radio' name='autoSave' value='On' style="padding: 10px 0px 10px 10px;" {1}>
+                <label class="game_label">On</label style="padding: 10px 10px 10px 0px;">
+                <input type='radio' name='autoSave' value='Off' style="padding: 10px 0px 10px 10px;" {2}>
+                <label class="game_label">Off</label style="padding: 10px 10px 10px 0px;">
+                <br>
+                <br>
+                <button class="game_button" type="submit" formaction="/settings2">Apply</button>
+                </hr>
+            </form>
+        </div>
+    </body>
+</html>

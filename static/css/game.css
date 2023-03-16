@@ -1,0 +1,105 @@
+@font-face {
+    font-family: Minecraft;
+    src: url(Minecraft.ttf) format(ttf);
+}
+
+.title {
+    font-family: Minecraft;
+    color: white;
+    font-size: 60px;
+}
+
+.game_button {
+    width: 156;
+    height: 40;
+    background-image: url('img/button156-40.png');
+    border: none;
+    font-family: Minecraft;
+    color: white;
+    font-size: 20px;
+}
+
+.game_button_small {
+    width: 78;
+    height: 20;
+    background-image: url('img/button78-20.png');
+    border: none;
+    font-family: Minecraft;
+    color: white;
+    font-size: 8px;
+}
+
+.game_input_submit {
+    width: 156;
+    height: 40;
+    background-image: url('img/button156-40.png');
+    border: none;
+    font-family: Minecraft;
+    color: white;
+    font-size: 20px;
+}
+
+.game_input_submit_order {
+    width: 156;
+    height: 40;
+    background-image: url('img/button156-40.png');
+    border: none;
+    font-family: Minecraft;
+    color: white;
+    font-size: 15px;
+}
+
+.game_text_input {
+    width: 200;
+    height: 40;
+    border: none;
+    font-family: Minecraft;
+    font-size: 20px;
+    text-align: center;
+}
+
+.game_number_input {
+    width: 200;
+    height: 40;
+    border: none;
+    font-family: Minecraft;
+    font-size: 20px;
+    text-align: center;
+}
+
+.game_label_title {
+    font-family: Minecraft;
+    color: white;
+    font-size: 20px;
+}
+
+.game_label {
+    font-family: Minecraft;
+    color: white;
+    font-size: 15px;
+}
+
+.inventory_div {
+    background-color: #9e884c;
+    border: 5px solid #594b2c;
+    border-radius: 15px;
+    padding: 15px;
+    width: 200px;
+}
+
+.div_colors {
+    background-color: #9e884c;
+    border: 5px solid #594b2c;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.button_quarry {
+    background-color: lightgray;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    font-family: Minecraft;
+    color: black;
+    font-size: 15px;
+}
